@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AZPYu5X/////AAABmfr5bltxeETGtamxdBDisig6ewhTYaj5VONpm9bzP4FVrFql+RDfsffLw/QCUI0jiSVAcSSHS2VGBXpEk8mmssS7oe/ORi/PYLAQ7MH8shFVruv4/zmVWWommk3OxwloZ4rs0RKY/4uZVDATyfY9Ct/RbaS2Dn2wyL+mW10WK0UCly6h1C5ClGzxM1oM3EAk+gh8D3RRertucxgZPM2gzlqsmxKsU6vEOCcURDBAii0s79dAdmhe6ieytIt+FLzZwEyGqOcZyD1A9MI1lP+9Lrh7PSCMUlPjEkQlMTh3JDlMyHvS/oOUx2sY3X2QeTnYM8cvJnnvtevNpIw34A/7TDqsd6sMhj4uOLoPlo+XpSRN
-    ufoLicenseKey: QWEra2IrYi8vLy8vQUFBQUtNQzhPNlYrOUUrZHNWR0RmTVZEMTFNYTk3d1hEdVdQUVQ1L3R6M1ovTlFNOWFrR1hvWlpvUGRBdytXaC8yMXVUZkJkaTNGaDN0QmJpZnhzdjQzY284TW45aVVFOXRnQzJZcjk4dk5HaUhKb1hrVk11MUR0R1FZYmJGSDUwLzFpNjhrazN5ODNYZGVXVmRtVUVPUWcwWWMrWlc1c2hGNzNFWkdKMEFDQm80VktyRkc5WENndEYxR1FSdHgxaG9BdjM3dzdEbVFwZS9RSjJVNDkyaEpmUGJSa1pHb0xRU0VPSUZGVkt0bk9jclJpMEtzZkNqdXhmSXdUdE1ibkMzK3h3V3UvMnJLaGx5REZLdkdJMWhUcVdqdUloVHlid1pVRnBsUDFyQmxQa2MzNE1pK1NKOS9LMFlWODg2ajU3Y1V4RVB3d0hKQUY3czd4em50aFhveTRpRGdoeHpTRjRaT2loK1duT1laUDAwTEk=
+    ufoLicenseKey: QVJITmxiai8vLy8vQUFBQUtIakU4aXpXV2t0Q3RDSTlMTzVtTTlkMnRFWVFEd1RlNlRSTkN4M2MrazZUZitHZTBqa1hpL0Yrd0EvNFVQdzhwUkw2SStjUTJ0SWZuMHJTTlZ3dXI0eHJLSDFySThXVlZqbURZUFBkL2ZkM1k1cXRSNTZ1L1Zkc0pjK0kvalFsSFRlZ2E4R01Ld3F2cnVLanVqdm5iV0dDdTMrbkJ0TDB4dWMyQ253U0JVVGhrQ25vMnBVdVNmUTRlT2czSUcxSnAvaWNjY1VoaEtNN3dkRWZCZHo0WDVSbnFBd0Ztd005U1lIajU4OUxCUDJiM2Z1TVFmQ294SlVmY05jRmd2T1ZxWTZIL2pUbTJscnhxNjVTcXJFcGt2WWdXQ3dmLzhQMzkxR3RLTVZQbzkrdUQvTC93ZFBMb3VkYjJvdlJmS3hmSmRCNndPYW1YS1IydlFteGEra1psWEh0QmtKMTl1amFXd3BhSjhmb0FUeVk=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -23,8 +23,8 @@ MonoBehaviour:
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
-    version: 10.3.2
-    eulaAcceptedVersions: '{"Values":["10.2","9.8","0.0","10.3"]}'
+    version: 9.8.11
+    eulaAcceptedVersions: '{"Values":["10.2","9.8","0.0","10.3","10.4"]}'
   database:
     disableModelExtraction: 0
   shaders:
@@ -37,10 +37,10 @@ MonoBehaviour:
   deviceTracker:
     autoStartTracker: 1
     arcoreRequirement: 1
-    autoImportArcore: 0
+    autoImportArcore: 1
   playmode:
     mSequencePath: 
-    playModeType: 1
+    playModeType: 0
   webcam:
     renderTextureLayer: 30
   packageInformation:
