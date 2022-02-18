@@ -24,6 +24,13 @@ public class Controller : MonoBehaviour
         homePage.SetActive(true);
         titleScreen.SetActive(false);
     }
+
+    public void backToTitle()
+    {
+        homePage.SetActive(false);
+        titleScreen.SetActive(true);
+    }
+
     public void LoadLevel(string newLevel)
     {
         //When level load is clicked load selected level
