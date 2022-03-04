@@ -12,11 +12,12 @@ public class Rotate : MonoBehaviour
     //Rotate object function
     public void RotateObject()
     {
+        //When button is pressed make true if false
         if (rotateStatus == false)
         {
             rotateStatus = true;
         }
-        else
+        else //If true make false
         {
             rotateStatus = false;
         }

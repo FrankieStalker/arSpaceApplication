@@ -5,30 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
+    //Variables to home scene selection and title screen
     public GameObject titleScreen;
     public GameObject homePage;
 
     public void Update()
     {
+        //If both the title screen or home page are true have the screen portriate
         if(titleScreen == true || homePage == true)
         {
             Screen.orientation = ScreenOrientation.Portrait;
         }
-        else
+        else //If entering an AR scene rotate screen landscape
         {
             Screen.orientation = ScreenOrientation.Landscape;
         }
     }
+
+    //When 'touch to start' set scene selection active and title screen !active
     public void titleScreenProceed()
     {
         homePage.SetActive(true);
         titleScreen.SetActive(false);
-    }
-
-    public void backToTitle()
-    {
-        homePage.SetActive(false);
-        titleScreen.SetActive(true);
     }
 
     public void LoadLevel(string newLevel)

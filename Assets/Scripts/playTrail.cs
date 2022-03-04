@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class playTrail : MonoBehaviour
 {
+    //Variable for particle system
     public ParticleSystem trail;
 
     bool particlActive = false;
 
     public void playParticleTrail()
     {
+        //When button is pressed make true if false
         if (particlActive == false)
         {
             particlActive = true;
         }
-        else
+        else //If true make false
         {
             particlActive = false;
         }
@@ -23,11 +25,12 @@ public class playTrail : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If true play the particle trail
         if(particlActive == true)
         {
             trail.Play();
         }
-        else
+        else //If !true pause particle trail
         {
             trail.Pause();
         }

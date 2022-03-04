@@ -14,11 +14,12 @@ public class RotateAroundPoint : MonoBehaviour
     //Rotate object function
     public void RotateObject()
     {
-        if(rotateStatus == false)
+        //When button is pressed make true if false
+        if (rotateStatus == false)
         {
             rotateStatus = true;
         }
-        else
+        else //If true make false
         {
             rotateStatus = false;
         }
