@@ -903,35 +903,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499336604}
   m_CullTransparentMesh: 1
---- !u!21 &541056253
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'IMG_3451Material
-
-    77874'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 12f6c79e5ccc49e2a9e5961eeea432a4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &906774890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +999,30 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1322102957}
         m_TargetAssemblyTypeName: RotateAroundPoint, Assembly-CSharp
+        m_MethodName: RotateObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1353525472}
+        m_TargetAssemblyTypeName: PolarRotation, Assembly-CSharp
+        m_MethodName: RotateObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2042464144}
+        m_TargetAssemblyTypeName: Rotate, Assembly-CSharp
         m_MethodName: RotateObject
         m_Mode: 1
         m_Arguments:
@@ -1345,6 +1340,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 10
   pivotObject: {fileID: 2042464142}
+--- !u!1001 &1353525470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2042464143}
+    m_Modifications:
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734793200943219041, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5403912699477728219, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+      propertyPath: m_Name
+      value: satalite Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+--- !u!1 &1353525471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5403912699477728219, guid: 7ffc54592046dae49ab9dee37d0bfe45, type: 3}
+  m_PrefabInstance: {fileID: 1353525470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1353525472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353525471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07dfc696aba03c48b28855b726d6215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 20
+  pivotObject: {fileID: 2042464142}
 --- !u!1 &1380217245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,7 +1491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 541056253}
+  - {fileID: 1571304566}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1764,6 +1847,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1571304566
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'IMG_3451Material
+
+    43810'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 12f6c79e5ccc49e2a9e5961eeea432a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1617266195
 GameObject:
   m_ObjectHideFlags: 0
