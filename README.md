@@ -9,7 +9,7 @@ Augmented Reality (AR) space exploartion appliaction for the purposes of evaluat
 - Clone repo from GitHub
 - Boot up Unity Hub
 - Click open project and add project to Unity Hub
-- ![image](https://user-images.githubusercontent.com/79984646/167518072-4c37b5bf-8e41-42b3-96b9-373727ed28c1.png)
+ ![image](https://user-images.githubusercontent.com/79984646/167518072-4c37b5bf-8e41-42b3-96b9-373727ed28c1.png)
 
 - Once project is loaded connect andorid device
 - Ensure android device is in developer mode Follow this tutorial: 
