@@ -2,34 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PolarRotation : MonoBehaviour
+public class PolarRotation : RotateAroundPoint
 {
-    //Variable to control the speed of rotation
-    public float rotationSpeed;
-    //Variable to hold object to rotate around
-    public GameObject pivotObject;
-    bool rotateStatus = true;
-
-    //Rotate object function
-    public void RotateObject()
-    {
-        //When button is pressed make true if false
-        if (rotateStatus == false)
-        {
-            rotateStatus = true;
-        }
-        else //If true make false
-        {
-            rotateStatus = false;
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
+        //Rotate object around point on Z axis once rotate status = true
+        //(multiply by Time.deltaTime to make sure it rotates at the same speed reguardless of frame rate)
         if (rotateStatus == true)
         {
-            //Rotate object around point once rotate status = true
             transform.RotateAround(pivotObject.transform.position, new Vector3(0, 0, 1), rotationSpeed * Time.deltaTime);
         }
 
